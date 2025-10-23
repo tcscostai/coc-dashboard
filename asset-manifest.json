@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/coc-dashboard/static/css/main.9e2843cb.css",
+    "main.js": "/coc-dashboard/static/js/main.ebbafc7c.js",
+    "static/js/453.62b96caf.chunk.js": "/coc-dashboard/static/js/453.62b96caf.chunk.js",
+    "index.html": "/coc-dashboard/index.html",
+    "main.9e2843cb.css.map": "/coc-dashboard/static/css/main.9e2843cb.css.map",
+    "main.ebbafc7c.js.map": "/coc-dashboard/static/js/main.ebbafc7c.js.map",
+    "453.62b96caf.chunk.js.map": "/coc-dashboard/static/js/453.62b96caf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e2843cb.css",
+    "static/js/main.ebbafc7c.js"
+  ]
+}
