@@ -1,0 +1,61 @@
+tile_id,metric_id,label,value,status,trend
+payment-integrity,spend-per-claim,Spend per Claim,$545,negative,up
+payment-integrity,denial-rate,Denial Rate,27.2%,positive,down
+payment-integrity,overturn-rate,Overturn Rate,18%,negative,up
+claims-management,clean-claim,Clean Claim %,72%,negative,down
+claims-management,tat-median,TAT (median),10.4 days,negative,up
+claims-management,rework-rate,Rework Rate,12%,negative,up
+clinical-quality,readmit-30day,Readmit 30-day,13.6%,negative,up
+clinical-quality,er-visits,ER Visits/1k,587,negative,up
+clinical-quality,gap-closure,Gap Closure,78%,negative,down
+finance-cost,paid-billed,Paid/Billed,85.7%,positive,up
+finance-cost,allowed-billed,Allowed/Billed,90.5%,neutral,stable
+finance-cost,pmpm,PMPM,$601,negative,up
+healthcare-economics,ip-op-mix,IP/OP Mix,62/38,negative,up
+healthcare-economics,cost-drivers,Cost Drivers,Oncology +$18,negative,up
+healthcare-economics,shiftable-spend,Shiftable Spend,$22.5M/Q,positive,stable
+utilization-management,pa-tat,PA TAT,22 hrs,positive,down
+utilization-management,pa-denial,PA Denial,9.1%,negative,up
+utilization-management,pa-overturn,PA Overturn,27%,negative,up
+provider-experience,csat,CSAT,4.1,negative,down
+provider-experience,inquiries,Inquiries,740K,negative,up
+provider-experience,sentiment,Sentiment,-0.12,negative,down
+member-experience,csat,CSAT,4.3,negative,down
+member-experience,inquiries,Inquiries,1.2M,negative,up
+member-experience,fcr,FCR,78%,negative,down
+digital-engagement,api-adoption,API Adoption,45%,positive,up
+digital-engagement,portal-sessions,Portal Sessions,28M,positive,up
+digital-engagement,manual-contact,Manual Contact,5.3%,positive,down
+call-center-provider,asa,ASA,31 sec,positive,stable
+call-center-provider,aht,AHT,6 min 22 sec,negative,up
+call-center-provider,contacts-per-1k,Contacts/1K Claims,53,negative,up
+call-center-member,asa,ASA,28 sec,positive,stable
+call-center-member,aht,AHT,5 min 41 sec,negative,up
+call-center-member,transfers,Transfers,11%,negative,up
+network-contracting,oon-spend,OON Spend,4.8%,negative,up
+network-contracting,adequacy,Adequacy,96%,negative,down
+network-contracting,coe-share,COE Share,18%,neutral,stable
+pharmacy,rx-pmpm,Rx PMPM,$138,negative,up
+pharmacy,specialty-share,Specialty Share,46%,negative,up
+pharmacy,adherence,Adherence (PDC≥80),82%,negative,down
+risk-adjustment,raf,RAF,0.94,negative,down
+risk-adjustment,unconfirmed-conditions,Unconfirmed Conditions,18%,negative,up
+risk-adjustment,coding-accuracy,Coding Accuracy,96.8%,positive,stable
+fraud-waste-abuse,recoveries-ytd,Recoveries YTD,$72.4M,positive,up
+fraud-waste-abuse,suspect-claims,Suspect Claims,0.9%,positive,down
+fraud-waste-abuse,pre-pay-hit-rate,Pre-Pay Hit Rate,68%,positive,up
+compliance-regulatory,sla-met,SLA Met,99.1%,positive,up
+compliance-regulatory,filing-exceptions,Filing Exceptions,0.3%,positive,down
+compliance-regulatory,phi-incidents,PHI Incidents,0,positive,stable
+data-quality,data-defects,Data Defects,0.7%,negative,up
+data-quality,uptime,Uptime,99.92%,positive,up
+data-quality,latency,Latency,410 ms,negative,up
+hr-workforce,time-to-hire,Time-to-Hire,28 days,negative,up
+hr-workforce,turnover,Turnover,17%,negative,up
+hr-workforce,training-compliance,Training Compliance,86%,negative,down
+social-reputation,sentiment-index,Sentiment Index,+0.18,negative,down
+social-reputation,mentions,Mentions,+22%,negative,up
+social-reputation,issue-index,Issue Index,0.34,negative,up
+growth-market,net-adds,Net Adds,+38K,positive,up
+growth-market,broker-nps,Broker NPS,46,negative,down
+growth-market,cac-per-member,CAC $/Member,$112,negative,up

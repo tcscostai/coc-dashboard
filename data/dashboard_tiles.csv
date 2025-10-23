@@ -1,0 +1,21 @@
+id,title,category,is_featured,usage_count,last_accessed,insights
+payment-integrity,Payment Integrity,payment-integrity,true,42,2025-01-16,Digital-first providers handled the surge with –1.4 pts lower denials; non-digital cohorts drove +$1.8M spend.
+claims-management,Claims Management,claims-management,true,38,2025-01-15,Rule-driven errors up 5%; TOPS config ticket issued. Potential $2.6M rework savings if corrected.
+clinical-quality,Clinical Management,clinical-quality,true,35,2025-01-14,West region care team capacity breached 110% utilization; redistribute tele-nursing coverage.
+finance-cost,Cost of Care,finance-cost,true,32,2025-01-13,Projected PMPM +0.6% next month if AQI persists; $18.6M avoidance via site-of-care shift 5% IP→OP.
+healthcare-economics,Healthcare Economics,healthcare-economics,false,28,2025-01-12,Air-quality-related spike cost ~$6.2M; temporary but forecasted for 3 weeks.
+utilization-management,Utilization Management,utilization-management,false,25,2025-01-11,PA Overturns up 3 pts; immediate rule synchronization needed in TOPS.
+provider-experience,Provider Experience,provider-experience,false,22,2025-01-10,CSAT drop correlates r = -0.58 with denial trend; mitigate by real-time provider notices.
+member-experience,Member Experience,member-experience,false,20,2025-01-09,Billing calls ↑ 9%; publish FAQ before CMS rule takes effect.
+digital-engagement,Digital Engagement,digital-engagement,false,18,2025-01-08,Outage impact contained via Cosmos fail-over; no claims delay > 6 hrs.
+call-center-provider,Call Center - Provider,call-center-provider,false,16,2025-01-07,2 FTE shortfall = +0.4 min AHT; hire immediate temps.
+call-center-member,Call Center - Member,call-center-member,false,15,2025-01-06,Predictive staffing required for next 2 weeks.
+network-contracting,Network & Contracting,network-contracting,false,14,2025-01-05,OON spend +0.5 pt adds $3.2M; re-route claims to COE partners.
+pharmacy,Pharmacy,pharmacy,false,13,2025-01-04,Non-fill spike cost ~$1.8M; activate co-pay assistance campaign.
+risk-adjustment,Risk Adjustment,risk-adjustment,false,12,2025-01-03,2-week coding lag may drop RAF 0.02; targeted QA audits needed.
+fraud-waste-abuse,Fraud Waste Abuse,fraud-waste-abuse,false,11,2025-01-02,Tighten lab rules to cut noise by 0.3 pt without missed fraud.
+compliance-regulatory,Compliance & Regulatory,compliance-regulatory,false,10,2025-01-01,PA rule implementation on track; testing window ends in 4 days.
+data-quality,Data Quality & Platform,data-quality,false,9,2024-12-31,No claim loss; data integrity validated post-incident.
+hr-workforce,HR/Workforce,hr-workforce,false,8,2024-12-30,Temp hires for Claims Ops approved; time-to-hire goal 24 days.
+social-reputation,Reputation Intelligence,social-reputation,false,7,2024-12-29,Sentiment ↓ post-rule release; publish clarifying statement w/in 48 hrs.
+growth-market,Market Performance,growth-market,false,6,2024-12-28,Pipeline delay forecast Q1; activate broker enablement campaign.

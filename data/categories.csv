@@ -1,0 +1,21 @@
+id,name,color,description
+payment-integrity,Payment Integrity,#F97316,Payment integrity monitoring and fraud detection
+claims-management,Claims Management,#10B981,Claims processing adjudication and workflow management
+clinical-quality,Clinical Management,#3B82F6,Clinical outcomes quality measures and patient care metrics
+finance-cost,Cost of Care,#8B5CF6,Financial performance cost analysis and budget management
+healthcare-economics,Healthcare Economics,#F59E0B,Market analysis economic trends and value-based care
+utilization-management,Utilization Management,#EF4444,Prior authorization utilization review and care management
+provider-experience,Provider Experience,#6B7280,Provider satisfaction network management and credentialing
+member-experience,Member Experience,#EC4899,Member satisfaction engagement and retention metrics
+digital-engagement,Digital Engagement,#14B8A6,Digital adoption portal usage and technology engagement
+call-center-provider,Call Center - Provider,#F97316,Provider support operations and call center performance
+call-center-member,Call Center - Member,#10B981,Member support operations and customer service metrics
+network-contracting,Network & Contracting,#3B82F6,Provider network management and contract negotiations
+pharmacy,Pharmacy,#8B5CF6,Pharmacy operations formulary management and drug utilization
+risk-adjustment,Risk Adjustment,#F59E0B,Risk scoring coding accuracy and revenue optimization
+fraud-waste-abuse,Fraud Waste Abuse,#EF4444,Fraud detection waste reduction and abuse prevention
+compliance-regulatory,Compliance & Regulatory,#6B7280,Regulatory compliance audits and policy management
+data-quality,Data Quality & Platform,#EC4899,Data governance platform performance and system reliability
+hr-workforce,HR/Workforce,#14B8A6,Human resources workforce analytics and talent management
+social-reputation,Reputation Intelligence,#F97316,Social media monitoring reputation management and brand intelligence
+growth-market,Market Performance,#10B981,Market expansion growth metrics and competitive analysis

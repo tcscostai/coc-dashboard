@@ -1,0 +1,11 @@
+name,tin,volume,denial_rate,spend_per_claim,digital_maturity,platform,opportunity,badges
+Metro Health System,123456789,15420,24.8%,$521,High,TOPS,2.3M,Digital Leader
+Regional Medical Center,987654321,12850,31.2%,$589,Medium,Cosmos,1.8M,High Volume
+Community Hospital Group,456789123,8920,28.5%,$612,Low,TOPS,1.2M,Cost Focus
+University Health Network,789123456,22100,22.1%,$498,High,TOPS,3.1M,Academic Partner
+Rural Health Alliance,321654987,3450,35.8%,$678,Low,Cosmos,0.8M,Remote Care
+Specialty Care Partners,654321789,5670,26.3%,$545,Medium,TOPS,1.1M,Specialty Focus
+Metropolitan Medical Group,147258369,18900,29.7%,$567,High,Cosmos,2.4M,Urban Network
+Coastal Health Systems,369258147,11200,25.1%,$523,Medium,TOPS,1.6M,Coastal Market
+Mountain View Healthcare,258147369,6780,32.4%,$598,Low,Cosmos,1.0M,Mountain Region
+Valley Medical Associates,741852963,15600,27.9%,$556,High,TOPS,2.1M,Valley Network
