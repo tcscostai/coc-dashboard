@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/coc-dashboard/static/css/main.9e2843cb.css",
-    "main.js": "/coc-dashboard/static/js/main.cdb7b8d5.js",
+    "main.js": "/coc-dashboard/static/js/main.7307de12.js",
     "static/js/453.62b96caf.chunk.js": "/coc-dashboard/static/js/453.62b96caf.chunk.js",
     "index.html": "/coc-dashboard/index.html",
     "main.9e2843cb.css.map": "/coc-dashboard/static/css/main.9e2843cb.css.map",
-    "main.cdb7b8d5.js.map": "/coc-dashboard/static/js/main.cdb7b8d5.js.map",
+    "main.7307de12.js.map": "/coc-dashboard/static/js/main.7307de12.js.map",
     "453.62b96caf.chunk.js.map": "/coc-dashboard/static/js/453.62b96caf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e2843cb.css",
-    "static/js/main.cdb7b8d5.js"
+    "static/js/main.7307de12.js"
   ]
 }
