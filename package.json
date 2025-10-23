@@ -2,7 +2,7 @@
   "name": "occ-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://tcscostai.github.io/coc-dashboard",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -35,7 +35,9 @@
     "eject": "react-scripts eject",
     "start:full": "./start.sh",
     "backend": "cd backend && npm start",
-    "backend:dev": "cd backend && npm run dev"
+    "backend:dev": "cd backend && npm run dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -54,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
