@@ -183,17 +183,10 @@ const Header: React.FC<HeaderProps> = ({ user, onLogout }) => {
 
             {/* User profile */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, ml: 1 }}>
-              <Avatar sx={{ width: 32, height: 32, bgcolor: 'grey.300' }}>
-                <img 
-                  src="./images/heather-sample.jpg" 
-                  alt={user.name} 
-                  style={{ 
-                    width: '100%', 
-                    height: '100%', 
-                    objectFit: 'cover',
-                    borderRadius: '50%'
-                  }} 
-                />
+              <Avatar sx={{ width: 32, height: 32, bgcolor: 'primary.main' }}>
+                <Typography variant="body2" sx={{ fontWeight: 600, color: 'white' }}>
+                  {user.name.split(' ').map(n => n[0]).join('')}
+                </Typography>
               </Avatar>
               <Typography variant="body2" sx={{ fontWeight: 500 }}>
                 {user.name}

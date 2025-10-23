@@ -37,8 +37,8 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
     // Simulate login process
     setTimeout(() => {
       onLogin({
-        name: 'Heather Cianfrocco',
-        title: 'EVP of Governance, Compliance and Information Security',
+        name: 'Saurabh Dubey',
+        title: 'Senior Software Engineer',
       });
       setIsLoading(false);
     }, 1000);

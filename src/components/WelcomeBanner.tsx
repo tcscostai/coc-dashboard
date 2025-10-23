@@ -47,15 +47,18 @@ const WelcomeBanner: React.FC<WelcomeBannerProps> = ({
           {/* Left - Welcome */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
             <Avatar
-              src="./images/heather-sample.jpg"
-              alt={user.name}
               sx={{
                 width: 80,
                 height: 80,
                 border: '3px solid rgba(255, 255, 255, 0.3)',
                 boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                bgcolor: 'rgba(255, 255, 255, 0.2)',
+                fontSize: '2rem',
+                fontWeight: 600,
               }}
-            />
+            >
+              {user.name.split(' ').map(n => n[0]).join('')}
+            </Avatar>
             <Box>
               <Typography variant="h4" component="h1" sx={{ fontWeight: 700 }}>
                 Welcome, {user.name}
