@@ -1,213 +1,147 @@
-# OCC Dashboard - Dynamic Data System
+# OCC Dashboard - Provider Proforma Analytics
 
-This project has been transformed from using static mock data to a dynamic system with a backend server that reads data from CSV files and serves it via REST API.
+A comprehensive React TypeScript dashboard application for healthcare provider performance analytics and payment integrity monitoring.
 
-## Architecture
+## 🚀 Live Demo
 
-- **Frontend**: React TypeScript application with Material-UI
-- **Backend**: Node.js/Express server
-- **Data Source**: CSV files (simulating SQL Server data)
-- **API**: RESTful endpoints for data access
+**🌐 [View Live Application](https://tcscostai.github.io/coc-dashboard/)**
 
-## Project Structure
+## 📊 Features
+
+### Dashboard Overview
+- **Payment Integrity Tile** - Navigate to detailed Provider Proforma analytics
+- **Interactive KPI Tiles** - 8 key performance indicators with detailed tooltips
+- **Real-time Data Visualization** - Dynamic charts and metrics
+
+### Provider Proforma Analytics
+- **Key Performance Indicators** - 8 KPI tiles with different light colors and comprehensive tooltips
+- **Advanced Analytics & Performance Insights**:
+  - **Claim Value Trends** - Total claim value and unique claims with calculation details
+  - **Performance Scores** - Claims processing efficiency, provider satisfaction, cost management, and quality scores
+  - **Top 10 Rankings** - Providers by volume, LOBs, and Sites
+  - **Drill-Down Analysis** - Interactive period comparison (Monthly, QoQ, YoY, Rolling 12M)
+  - **Comparative Periods Analysis** - Functional comparison with dimension breakdown
+  - **Statistical Deviation Analysis** - Z-score flagging for surges and dips
+
+### Technical Features
+- **Responsive Design** - Works seamlessly across all devices
+- **Interactive Tooltips** - Detailed calculation explanations for all metrics
+- **Dynamic Filtering** - Real-time data updates based on user selections
+- **Professional UI/UX** - Clean, corporate design with Material-UI components
+
+## 🛠️ Technology Stack
+
+- **Frontend**: React 19, TypeScript, Material-UI
+- **Charts**: Recharts for data visualization
+- **State Management**: React Context API
+- **Routing**: React Router DOM
+- **Icons**: Lucide React, Material-UI Icons
+- **Backend**: Node.js, Express
+- **Data**: CSV-based mock data system
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/tcscostai/coc-dashboard.git
+   cd coc-dashboard
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+4. **Start the backend server** (optional)
+   ```bash
+   npm run backend
+   ```
+
+5. **Start both frontend and backend**
+   ```bash
+   npm run start:full
+   ```
+
+### Available Scripts
+
+- `npm start` - Start React development server
+- `npm run build` - Build for production
+- `npm run backend` - Start backend server
+- `npm run start:full` - Start both frontend and backend
+- `npm run deploy` - Deploy to GitHub Pages
+
+## 📁 Project Structure
 
 ```
 occ-dashboard/
-├── src/                    # Frontend React application
-│   ├── components/         # React components
-│   ├── contexts/          # React contexts (DataContext, AlexContext)
-│   ├── services/          # API service layer
-│   ├── pages/             # Page components
-│   └── styles/            # Styling files
-├── backend/               # Backend server
-│   ├── server.js          # Express server
-│   └── package.json       # Backend dependencies
-├── data/                  # CSV data files
-│   ├── categories.csv
-│   ├── dashboard_tiles.csv
-│   ├── tile_metrics.csv
-│   ├── todays_signals.csv
-│   ├── provider_proforma_kpis.csv
-│   ├── provider_entities.csv
-│   ├── chart_data.csv
-│   ├── additional_dashboard_tiles.csv
-│   └── additional_metrics.csv
-└── README.md
+├── src/
+│   ├── components/          # Reusable UI components
+│   ├── contexts/           # React Context providers
+│   ├── pages/              # Main application pages
+│   ├── services/           # API services
+│   ├── styles/             # Styling and themes
+│   ├── types/              # TypeScript type definitions
+│   └── utils/              # Utility functions
+├── backend/                # Node.js backend server
+├── data/                   # CSV data files
+├── public/                 # Static assets
+└── deployment/             # Production build files
 ```
 
-## Data Structure
+## 🎯 Key Components
 
-### Dashboard Tiles
-- Main dashboard tiles with metrics, insights, and usage tracking
-- Categories for filtering (Payment Integrity, Claims Management, etc.)
-- Featured tiles and usage statistics
+- **DashboardTile** - Individual dashboard tiles with navigation
+- **ProviderProforma** - Main analytics page with KPIs and insights
+- **AlexChatbot** - AI assistant for dashboard insights
+- **FilterControls** - Data filtering and selection controls
+- **DataContext** - Centralized data management
 
-### Metrics
-- Key performance indicators for each dashboard tile
-- Status indicators (positive, negative, neutral)
-- Trend data (up, down, stable)
+## 📊 Data Sources
 
-### Today's Signals
-- Real-time alerts and notifications
-- Different severity levels (error, warning, info)
-- Source attribution and timestamps
+The application uses mock CSV data files for demonstration:
+- `provider_proforma_kpis.csv` - KPI metrics data
+- `provider_entities.csv` - Provider entity information
+- `chart_data.csv` - Chart visualization data
+- `dashboard_tiles.csv` - Dashboard tile configurations
 
-### Provider Proforma Data
-- KPI metrics with peer comparisons
-- Provider entity data with performance metrics
-- Chart data for historical trends
+## 🚀 Deployment
 
-## Setup Instructions
+### GitHub Pages
+The application is automatically deployed to GitHub Pages:
+- **URL**: https://tcscostai.github.io/coc-dashboard/
+- **Deploy Command**: `npm run deploy`
 
-### 1. Install Backend Dependencies
+### Manual Deployment
+1. Build the project: `npm run build`
+2. Deploy the `build/` folder to your hosting service
 
-```bash
-cd backend
-npm install
-```
+## 🤝 Contributing
 
-### 2. Install Frontend Dependencies
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit changes: `git commit -m 'Add feature'`
+4. Push to branch: `git push origin feature-name`
+5. Submit a pull request
 
-```bash
-# From project root
-npm install
-```
+## 📝 License
 
-### 3. Start the Backend Server
+This project is private and proprietary.
 
-```bash
-cd backend
-npm start
-```
+## 📞 Support
 
-The backend server will start on port 5001 by default.
+For support or questions, please contact the development team.
 
-### 4. Start the Frontend Application
+---
 
-```bash
-# From project root
-npm start
-```
-
-The frontend will start on port 3000 and automatically connect to the backend on port 5001.
-
-## API Endpoints
-
-### Dashboard Data
-- `GET /api/categories` - Get all categories
-- `GET /api/dashboard-tiles` - Get dashboard tiles (with optional filtering)
-- `GET /api/dashboard-tiles/:tileId/metrics` - Get metrics for specific tile
-- `GET /api/tile-metrics` - Get all tile metrics
-- `POST /api/dashboard-tiles/:tileId/usage` - Update tile usage count
-
-### Today's Signals
-- `GET /api/todays-signals` - Get today's signals/alerts
-
-### Provider Proforma
-- `GET /api/provider-proforma/kpis` - Get KPI metrics
-- `GET /api/provider-proforma/entities` - Get provider entities
-- `GET /api/provider-proforma/chart-data` - Get chart data
-
-### Health Check
-- `GET /api/health` - Server health and data status
-
-## Features
-
-### Dynamic Data Loading
-- All data is loaded from CSV files via the backend API
-- Real-time data updates when tiles are clicked
-- Loading states and error handling
-
-### Filtering and Sorting
-- Category-based filtering (All, Payment Integrity, Claims Management, etc.)
-- Multiple sorting options (Featured, A-Z, Recent, Most Used)
-- Real-time filter updates via API calls
-
-### Responsive Design
-- Grid and list view modes
-- Mobile-responsive layout
-- Material-UI components
-
-### Data Persistence
-- Usage counts are tracked and updated
-- Last accessed timestamps
-- Tile interaction history
-
-## Adding New Data
-
-### 1. Add New CSV Data
-- Create or update CSV files in the `data/` directory
-- Follow the existing CSV structure and column names
-- Restart the backend server to load new data
-
-### 2. Add New API Endpoints
-- Modify `backend/server.js` to add new endpoints
-- Update `src/services/api.ts` to add new API methods
-- Update `src/contexts/DataContext.tsx` to manage new data
-
-### 3. Add New Frontend Features
-- Create new components in `src/components/`
-- Add new pages in `src/pages/`
-- Update the routing in `src/App.tsx`
-
-## Environment Variables
-
-Create a `.env` file in the project root:
-
-```
-REACT_APP_API_URL=http://localhost:5001/api
-```
-
-## Development
-
-### Backend Development
-```bash
-cd backend
-npm run dev  # Uses nodemon for auto-restart
-```
-
-### Frontend Development
-```bash
-npm start  # React development server with hot reload
-```
-
-## Production Deployment
-
-### Build Frontend
-```bash
-npm run build
-```
-
-### Deploy Backend
-```bash
-cd backend
-npm start
-```
-
-## Data Customization
-
-The CSV files can be easily modified to:
-- Add new dashboard tiles
-- Update metrics and KPIs
-- Modify categories and filters
-- Add new signals and alerts
-- Update provider data
-
-All changes will be reflected in the UI without code changes, making it easy to customize the dashboard for different use cases.
-
-## Troubleshooting
-
-### Backend Issues
-- Check that port 5001 is available
-- Verify CSV files are in the correct format
-- Check console logs for data loading errors
-
-### Frontend Issues
-- Ensure backend is running on port 5001
-- Check browser console for API errors
-- Verify CORS settings if running on different ports
-
-### Data Issues
-- Verify CSV file format and column names
-- Check that all required fields are present
-- Restart backend server after CSV changes
+**Built with ❤️ for healthcare analytics and provider performance monitoring**
