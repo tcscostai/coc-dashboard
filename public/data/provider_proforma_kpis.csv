@@ -1,0 +1,11 @@
+id,label,value,delta,delta_type,index,peer_comparison,trend
+1,Spend per Claim,$545,+$12,negative,1,Top 25%,up
+2,Denial Rate,27.2%,-2.1%,positive,2,Top 10%,down
+3,Overturn Rate,18%,+3.2%,negative,3,Bottom 25%,up
+4,Clean Claim %,72%,-5.1%,negative,4,Bottom 10%,down
+5,TAT (median),10.4 days,+1.2 days,negative,5,Bottom 25%,up
+6,Readmit 30-day,13.6%,+1.8%,negative,6,Top 25%,up
+7,ER Visits/1k,587,+23,negative,7,Top 10%,up
+8,Paid/Billed,85.7%,+2.3%,positive,8,Top 25%,up
+9,PMPM,$601,+$18,negative,9,Top 25%,up
+10,CSAT,4.1,-0.3,negative,10,Bottom 25%,down

@@ -1,0 +1,61 @@
+tile_id,metric_id,label,value,status,trend
+payment-integrity-advanced,fraud-detection-accuracy,Fraud Detection Accuracy,94.2%,positive,up
+payment-integrity-advanced,false-positive-rate,False Positive Rate,2.1%,positive,down
+payment-integrity-advanced,investigation-time,Avg Investigation Time,3.2 days,positive,down
+claims-management-automation,automation-rate,Automation Rate,78%,positive,up
+claims-management-automation,manual-review-reduction,Manual Review Reduction,40%,positive,up
+claims-management-automation,processing-time,Avg Processing Time,2.1 days,positive,down
+clinical-quality-outcomes,readmission-rate,Readmission Rate,11.2%,positive,down
+clinical-quality-outcomes,patient-satisfaction,Patient Satisfaction,4.6,positive,up
+clinical-quality-outcomes,care-coordination,Care Coordination Score,87%,positive,up
+finance-cost-detailed,pharmacy-costs,Pharmacy Costs,$145M,negative,up
+finance-cost-detailed,specialty-drug-utilization,Specialty Drug Utilization,48%,negative,up
+finance-cost-detailed,cost-per-member,Cost per Member,$425,negative,up
+healthcare-economics-regional,west-coast-trends,West Coast Cost Trends,+5.2%,negative,up
+healthcare-economics-regional,market-competition,Market Competition Index,0.73,neutral,stable
+healthcare-economics-regional,value-based-care,Value-Based Care %,34%,positive,up
+utilization-management-prior-auth,prior-auth-denials,Prior Auth Denials,8.2%,positive,down
+utilization-management-prior-auth,approval-time,Avg Approval Time,18 hrs,positive,down
+utilization-management-prior-auth,appeal-rate,Appeal Rate,12%,negative,up
+provider-experience-satisfaction,provider-satisfaction,Provider Satisfaction,4.3,positive,up
+provider-experience-satisfaction,network-retention,Network Retention,94%,positive,up
+provider-experience-satisfaction,credentialing-time,Credentialing Time,14 days,positive,down
+member-experience-engagement,digital-adoption,Digital Adoption,67%,positive,up
+member-experience-engagement,portal-usage,Portal Usage,89%,positive,up
+member-experience-engagement,member-retention,Member Retention,92%,positive,up
+digital-engagement-mobile,mobile-usage,Mobile App Usage,45%,positive,up
+digital-engagement-mobile,app-rating,App Rating,4.2,positive,up
+digital-engagement-mobile,feature-adoption,Feature Adoption,73%,positive,up
+call-center-provider-performance,handle-time,Avg Handle Time,4.2 min,positive,down
+call-center-provider-performance,resolution-rate,Resolution Rate,89%,positive,up
+call-center-provider-performance,first-call-resolution,First Call Resolution,76%,positive,up
+call-center-member-satisfaction,member-satisfaction,Member Satisfaction,4.4,positive,up
+call-center-member-satisfaction,call-volume,Call Volume,1.8M,negative,up
+call-center-member-satisfaction,wait-time,Avg Wait Time,1.2 min,positive,down
+network-contracting-negotiations,cost-savings,Cost Savings,15%,positive,up
+network-contracting-negotiations,contract-renewals,Contract Renewals,87%,positive,up
+network-contracting-negotiations,negotiation-time,Avg Negotiation Time,45 days,negative,up
+pharmacy-formulary,formulary-coverage,Formulary Coverage,94%,positive,up
+pharmacy-formulary,generic-utilization,Generic Utilization,78%,positive,up
+pharmacy-formulary,cost-per-script,Cost per Script,$23.45,negative,up
+risk-adjustment-coding,coding-accuracy,Coding Accuracy,97.2%,positive,up
+risk-adjustment-coding,raf-score,RAF Score,1.12,positive,up
+risk-adjustment-coding,condition-capture,Condition Capture Rate,89%,positive,up
+fraud-waste-abuse-detection,fraud-detected,Fraud Detected,$2.3M,positive,up
+fraud-waste-abuse-detection,false-positives,False Positives,1.8%,positive,down
+fraud-waste-abuse-detection,investigation-time,Investigation Time,2.8 days,positive,down
+compliance-regulatory-audit,compliance-rate,Compliance Rate,100%,positive,stable
+compliance-regulatory-audit,audit-findings,Audit Findings,0,positive,stable
+compliance-regulatory-audit,remediation-time,Remediation Time,5 days,positive,down
+data-quality-monitoring,data-accuracy,Data Accuracy,99.1%,positive,up
+data-quality-monitoring,completeness,Data Completeness,97.8%,positive,up
+data-quality-monitoring,consistency,Data Consistency,98.5%,positive,up
+hr-workforce-analytics,retention-rate,Retention Rate,87%,positive,up
+hr-workforce-analytics,time-to-hire,Time to Hire,21 days,positive,down
+hr-workforce-analytics,training-completion,Training Completion,94%,positive,up
+social-reputation-monitoring,sentiment-score,Sentiment Score,0.24,positive,up
+social-reputation-monitoring,mention-volume,Mention Volume,2.1K,negative,up
+social-reputation-monitoring,response-time,Response Time,2.3 hrs,positive,down
+growth-market-expansion,market-penetration,Market Penetration,12%,positive,up
+growth-market-expansion,new-members,New Members,45K,positive,up
+growth-market-expansion,market-share,Market Share,23%,positive,up

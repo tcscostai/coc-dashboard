@@ -1,0 +1,11 @@
+id,text,source,type,trend,severity,created_at
+1,Respiratory illness up 8%,CDC,health,up,warning,2025-01-16T08:00:00Z
+2,Air quality poor in CA,AQI 160,environment,down,error,2025-01-16T07:30:00Z
+3,Inflation +0.4% MoM,,economic,up,warning,2025-01-16T07:00:00Z
+4,New CMS prior authorization rule,,regulatory,stable,info,2025-01-16T06:30:00Z
+5,Digital outage TOPS East region 2h,,operational,down,error,2025-01-16T06:00:00Z
+6,Provider network expansion in TX,,network,up,info,2025-01-16T05:30:00Z
+7,Member satisfaction survey results,,member,up,info,2025-01-16T05:00:00Z
+8,Pharmacy formulary update,,pharmacy,stable,info,2025-01-16T04:30:00Z
+9,Claims processing delay resolved,,operational,up,info,2025-01-16T04:00:00Z
+10,New fraud detection rules active,,fraud,stable,info,2025-01-16T03:30:00Z

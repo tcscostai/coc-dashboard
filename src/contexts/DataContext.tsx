@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { apiService, Category, DashboardTile, TileMetric, TodaysSignal, ProviderKPI, ProviderEntity, ChartDataPoint } from '../services/api';
+import { staticDataService, Category, DashboardTile, TileMetric, TodaysSignal, ProviderKPI, ProviderEntity, ChartDataPoint } from '../services/staticDataService';
 
 interface DataContextType {
   // Data
@@ -87,7 +87,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
     setLoading(prev => ({ ...prev, categories: true }));
     setErrors(prev => ({ ...prev, categories: null }));
     try {
-      const data = await apiService.getCategories();
+      const data = await staticDataService.getCategories();
       setCategories(data);
     } catch (error) {
       setErrors(prev => ({ ...prev, categories: error instanceof Error ? error.message : 'Failed to load categories' }));
@@ -100,7 +100,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
     setLoading(prev => ({ ...prev, dashboardTiles: true }));
     setErrors(prev => ({ ...prev, dashboardTiles: null }));
     try {
-      const data = await apiService.getDashboardTiles(filters);
+      const data = await staticDataService.getDashboardTiles(filters);
       setDashboardTiles(data);
     } catch (error) {
       setErrors(prev => ({ ...prev, dashboardTiles: error instanceof Error ? error.message : 'Failed to load dashboard tiles' }));
@@ -113,7 +113,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
     setLoading(prev => ({ ...prev, tileMetrics: true }));
     setErrors(prev => ({ ...prev, tileMetrics: null }));
     try {
-      const data = await apiService.getAllTileMetrics();
+      const data = await staticDataService.getTileMetrics();
       setTileMetrics(data);
     } catch (error) {
       setErrors(prev => ({ ...prev, tileMetrics: error instanceof Error ? error.message : 'Failed to load tile metrics' }));
@@ -126,7 +126,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
     setLoading(prev => ({ ...prev, todaysSignals: true }));
     setErrors(prev => ({ ...prev, todaysSignals: null }));
     try {
-      const data = await apiService.getTodaysSignals();
+      const data = await staticDataService.getTodaysSignals();
       setTodaysSignals(data);
     } catch (error) {
       setErrors(prev => ({ ...prev, todaysSignals: error instanceof Error ? error.message : 'Failed to load today\'s signals' }));
@@ -139,7 +139,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
     setLoading(prev => ({ ...prev, providerKPIs: true }));
     setErrors(prev => ({ ...prev, providerKPIs: null }));
     try {
-      const data = await apiService.getProviderKPIs();
+      const data = await staticDataService.getProviderKPIs();
       setProviderKPIs(data);
     } catch (error) {
       setErrors(prev => ({ ...prev, providerKPIs: error instanceof Error ? error.message : 'Failed to load provider KPIs' }));
@@ -152,7 +152,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
     setLoading(prev => ({ ...prev, providerEntities: true }));
     setErrors(prev => ({ ...prev, providerEntities: null }));
     try {
-      const data = await apiService.getProviderEntities();
+      const data = await staticDataService.getProviderEntities();
       setProviderEntities(data);
     } catch (error) {
       setErrors(prev => ({ ...prev, providerEntities: error instanceof Error ? error.message : 'Failed to load provider entities' }));
@@ -165,7 +165,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
     setLoading(prev => ({ ...prev, chartData: true }));
     setErrors(prev => ({ ...prev, chartData: null }));
     try {
-      const data = await apiService.getChartData();
+      const data = await staticDataService.getChartData();
       setChartData(data);
     } catch (error) {
       setErrors(prev => ({ ...prev, chartData: error instanceof Error ? error.message : 'Failed to load chart data' }));
@@ -184,7 +184,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
 
   const updateTileUsage = async (tileId: string) => {
     try {
-      await apiService.updateTileUsage(tileId);
+      await staticDataService.updateTileUsage(tileId);
       // Refresh dashboard tiles to get updated usage count
       await loadDashboardTiles();
     } catch (error) {
