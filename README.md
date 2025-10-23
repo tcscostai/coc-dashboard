@@ -1,46 +1,213 @@
-# Getting Started with Create React App
+# OCC Dashboard - Dynamic Data System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has been transformed from using static mock data to a dynamic system with a backend server that reads data from CSV files and serves it via REST API.
 
-## Available Scripts
+## Architecture
 
-In the project directory, you can run:
+- **Frontend**: React TypeScript application with Material-UI
+- **Backend**: Node.js/Express server
+- **Data Source**: CSV files (simulating SQL Server data)
+- **API**: RESTful endpoints for data access
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+occ-dashboard/
+├── src/                    # Frontend React application
+│   ├── components/         # React components
+│   ├── contexts/          # React contexts (DataContext, AlexContext)
+│   ├── services/          # API service layer
+│   ├── pages/             # Page components
+│   └── styles/            # Styling files
+├── backend/               # Backend server
+│   ├── server.js          # Express server
+│   └── package.json       # Backend dependencies
+├── data/                  # CSV data files
+│   ├── categories.csv
+│   ├── dashboard_tiles.csv
+│   ├── tile_metrics.csv
+│   ├── todays_signals.csv
+│   ├── provider_proforma_kpis.csv
+│   ├── provider_entities.csv
+│   ├── chart_data.csv
+│   ├── additional_dashboard_tiles.csv
+│   └── additional_metrics.csv
+└── README.md
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Data Structure
 
-### `npm test`
+### Dashboard Tiles
+- Main dashboard tiles with metrics, insights, and usage tracking
+- Categories for filtering (Payment Integrity, Claims Management, etc.)
+- Featured tiles and usage statistics
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Metrics
+- Key performance indicators for each dashboard tile
+- Status indicators (positive, negative, neutral)
+- Trend data (up, down, stable)
 
-### `npm run build`
+### Today's Signals
+- Real-time alerts and notifications
+- Different severity levels (error, warning, info)
+- Source attribution and timestamps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Provider Proforma Data
+- KPI metrics with peer comparisons
+- Provider entity data with performance metrics
+- Chart data for historical trends
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Install Backend Dependencies
 
-### `npm run eject`
+```bash
+cd backend
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 2. Install Frontend Dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# From project root
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 3. Start the Backend Server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+cd backend
+npm start
+```
 
-## Learn More
+The backend server will start on port 5001 by default.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Start the Frontend Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# From project root
+npm start
+```
+
+The frontend will start on port 3000 and automatically connect to the backend on port 5001.
+
+## API Endpoints
+
+### Dashboard Data
+- `GET /api/categories` - Get all categories
+- `GET /api/dashboard-tiles` - Get dashboard tiles (with optional filtering)
+- `GET /api/dashboard-tiles/:tileId/metrics` - Get metrics for specific tile
+- `GET /api/tile-metrics` - Get all tile metrics
+- `POST /api/dashboard-tiles/:tileId/usage` - Update tile usage count
+
+### Today's Signals
+- `GET /api/todays-signals` - Get today's signals/alerts
+
+### Provider Proforma
+- `GET /api/provider-proforma/kpis` - Get KPI metrics
+- `GET /api/provider-proforma/entities` - Get provider entities
+- `GET /api/provider-proforma/chart-data` - Get chart data
+
+### Health Check
+- `GET /api/health` - Server health and data status
+
+## Features
+
+### Dynamic Data Loading
+- All data is loaded from CSV files via the backend API
+- Real-time data updates when tiles are clicked
+- Loading states and error handling
+
+### Filtering and Sorting
+- Category-based filtering (All, Payment Integrity, Claims Management, etc.)
+- Multiple sorting options (Featured, A-Z, Recent, Most Used)
+- Real-time filter updates via API calls
+
+### Responsive Design
+- Grid and list view modes
+- Mobile-responsive layout
+- Material-UI components
+
+### Data Persistence
+- Usage counts are tracked and updated
+- Last accessed timestamps
+- Tile interaction history
+
+## Adding New Data
+
+### 1. Add New CSV Data
+- Create or update CSV files in the `data/` directory
+- Follow the existing CSV structure and column names
+- Restart the backend server to load new data
+
+### 2. Add New API Endpoints
+- Modify `backend/server.js` to add new endpoints
+- Update `src/services/api.ts` to add new API methods
+- Update `src/contexts/DataContext.tsx` to manage new data
+
+### 3. Add New Frontend Features
+- Create new components in `src/components/`
+- Add new pages in `src/pages/`
+- Update the routing in `src/App.tsx`
+
+## Environment Variables
+
+Create a `.env` file in the project root:
+
+```
+REACT_APP_API_URL=http://localhost:5001/api
+```
+
+## Development
+
+### Backend Development
+```bash
+cd backend
+npm run dev  # Uses nodemon for auto-restart
+```
+
+### Frontend Development
+```bash
+npm start  # React development server with hot reload
+```
+
+## Production Deployment
+
+### Build Frontend
+```bash
+npm run build
+```
+
+### Deploy Backend
+```bash
+cd backend
+npm start
+```
+
+## Data Customization
+
+The CSV files can be easily modified to:
+- Add new dashboard tiles
+- Update metrics and KPIs
+- Modify categories and filters
+- Add new signals and alerts
+- Update provider data
+
+All changes will be reflected in the UI without code changes, making it easy to customize the dashboard for different use cases.
+
+## Troubleshooting
+
+### Backend Issues
+- Check that port 5001 is available
+- Verify CSV files are in the correct format
+- Check console logs for data loading errors
+
+### Frontend Issues
+- Ensure backend is running on port 5001
+- Check browser console for API errors
+- Verify CORS settings if running on different ports
+
+### Data Issues
+- Verify CSV file format and column names
+- Check that all required fields are present
+- Restart backend server after CSV changes

@@ -1,0 +1,21 @@
+id,title,category,is_featured,usage_count,last_accessed,insights
+payment-integrity-advanced,Advanced Payment Analytics,payment-integrity,false,15,2025-01-15,Machine learning models show 15% improvement in fraud detection accuracy.
+claims-management-automation,Claims Automation Dashboard,claims-management,false,12,2025-01-14,Automated processing reduced manual review by 40% this quarter.
+clinical-quality-outcomes,Patient Outcomes Tracker,clinical-quality,false,18,2025-01-13,Readmission rates improved by 8% with new care protocols.
+finance-cost-detailed,Detailed Cost Analysis,finance-cost,false,14,2025-01-12,Pharmacy costs increased 12% due to specialty drug utilization.
+healthcare-economics-regional,Regional Economics,healthcare-economics,false,9,2025-01-11,West Coast markets showing 5% higher cost trends.
+utilization-management-prior-auth,Prior Auth Analytics,utilization-management,false,11,2025-01-10,Prior auth denials decreased 20% with streamlined process.
+provider-experience-satisfaction,Provider Satisfaction Survey,provider-experience,false,7,2025-01-09,Provider satisfaction scores improved 15% this month.
+member-experience-engagement,Member Engagement Metrics,member-experience,false,13,2025-01-08,Digital engagement increased 25% with new portal features.
+digital-engagement-mobile,Mobile App Analytics,digital-engagement,false,16,2025-01-07,Mobile app usage increased 30% with new features.
+call-center-provider-performance,Provider Call Performance,call-center-provider,false,8,2025-01-06,Average handle time reduced by 2 minutes with new scripts.
+call-center-member-satisfaction,Member Call Satisfaction,call-center-member,false,10,2025-01-05,Member satisfaction scores improved 12% this quarter.
+network-contracting-negotiations,Contract Negotiations,network-contracting,false,6,2025-01-04,New contracts negotiated with 15% cost savings.
+pharmacy-formulary,Formulary Management,pharmacy,false,9,2025-01-03,Formulary changes resulted in 8% cost reduction.
+risk-adjustment-coding,Coding Accuracy Tracker,risk-adjustment,false,5,2025-01-02,Coding accuracy improved to 97.2% with new training.
+fraud-waste-abuse-detection,Fraud Detection System,fraud-waste-abuse,false,14,2025-01-01,AI models detected $2.3M in potential fraud this month.
+compliance-regulatory-audit,Regulatory Audit Tracker,compliance-regulatory,false,4,2024-12-31,All regulatory requirements met with 100% compliance.
+data-quality-monitoring,Data Quality Monitor,data-quality,false,11,2024-12-30,Data quality scores improved to 99.1% this quarter.
+hr-workforce-analytics,Workforce Analytics,hr-workforce,false,7,2024-12-29,Employee retention improved 18% with new programs.
+social-reputation-monitoring,Social Media Monitoring,social-reputation,false,6,2024-12-28,Social sentiment improved 22% this month.
+growth-market-expansion,Market Expansion Tracker,growth-market,false,8,2024-12-27,New market penetration increased 12% this quarter.
